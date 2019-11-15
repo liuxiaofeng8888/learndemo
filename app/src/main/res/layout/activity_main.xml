@@ -12,11 +12,20 @@
         android:id="@+id/tv_test_linearlayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试LinearLayout"
         android:onClick="testLinearLayout"
+        android:text="测试LinearLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/view_root_test" />
+
+    <include layout="@layout/view_merge_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

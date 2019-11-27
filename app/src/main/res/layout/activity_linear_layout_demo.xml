@@ -23,4 +23,8 @@
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:text="test01" />
+<FrameLayout
+    android:id="@+id/fl_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
 </LinearLayout>

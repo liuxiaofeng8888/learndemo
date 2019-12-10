@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="testLinearLayout"
-        android:text="测试LinearLayout的热修复"
+        android:text="测试LinearLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,8 +23,8 @@
         android:id="@+id/tv_test_viewpager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="testViewpager"
         android:layout_margin="20dp"
+        android:onClick="testViewpager"
         android:text="viewpager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,7 +37,15 @@
         android:layout_height="wrap_content"
         android:layout="@layout/view_root_test" />
 
-    <include layout="@layout/view_merge_test"
+    <include
+        layout="@layout/view_merge_test"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_animation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image1"
+        android:transitionName="110"/>
 </LinearLayout>

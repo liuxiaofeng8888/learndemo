@@ -1,17 +1,11 @@
 package com.example.learndemo;
 
 import com.tencent.tinker.loader.app.TinkerApplication;
+import com.tencent.tinker.loader.shareutil.ShareConstants;
 
 public class SampleApplication extends TinkerApplication {
-    protected SampleApplication(int tinkerFlags) {
-        super(tinkerFlags);
-    }
-
-    protected SampleApplication(int tinkerFlags, String delegateClassName, String loaderClassName, boolean tinkerLoadVerifyFlag) {
-        super(tinkerFlags, delegateClassName, loaderClassName, tinkerLoadVerifyFlag);
-    }
-
-    protected SampleApplication(int tinkerFlags, String delegateClassName) {
-        super(tinkerFlags, delegateClassName);
+    public SampleApplication() {
+        super(ShareConstants.TINKER_ENABLE_ALL, "com.example.learndemo.SampleApplicationLike",
+                "com.tencent.tinker.loader.TinkerLoader", false);
     }
 }

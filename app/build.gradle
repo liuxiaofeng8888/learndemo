@@ -38,6 +38,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation "com.android.support:multidex:1.0.2"
+    implementation("com.squareup.okhttp3:okhttp:3.10.0")
     implementation rootProject.ext.dependencies["tinker"]
     api rootProject.ext.dependencies["nativecrashreport"]
     api rootProject.ext.dependencies["crashreport_upgrade"]

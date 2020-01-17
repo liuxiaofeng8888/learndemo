@@ -2,6 +2,7 @@ package com.example.learndemo;
 
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -102,5 +103,21 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.i("click", "After click, do what you want to to.");
         }
+    }
+
+    public void testInterface(View view){
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.e("onStart", "onStart: " );
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.e("onStart", "newConfig: " );
     }
 }
